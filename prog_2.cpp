@@ -4,10 +4,10 @@ using namespace std;
 int main(){
     
     vector<int> arr = {1,1,1,1,1,2,2,2,2,2,2,2,3,3,3,3,4,4,5,5,5,5,6,7};
-    int index =0;
+    int index =1;
     int occ = 1;
     
-    for(int i=0;i<arr.size();i++){
+    for(int i=1;i<arr.size();i++){
         if(arr[i]==arr[i-1]){
             occ++;
         }else{
@@ -18,8 +18,8 @@ int main(){
         }
     }
     cout<<index<<endl;
-    for(auto it:arr){
-        cout<<it<<" ";
+    for(int it = 0;it<index;it++){
+        cout<<arr[it]<<" ";
     }
     return 0;
 }
